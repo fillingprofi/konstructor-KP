@@ -1,0 +1,8 @@
+{
+  "name": "Remix Конструктор КП v2",
+  "description": "Профессиональный конструктор коммерческих предложений с поддержкой AI импорта, живого предпросмотра A4, точного экспорта в PDF и DOCX.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

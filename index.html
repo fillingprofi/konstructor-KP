@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Конструктор КП v2</title>
+    <meta name="description" content="Профессиональный конструктор коммерческих предложений с поддержкой AI импорта, живого предпросмотра A4, точного экспорта в PDF и DOCX." />
+    <meta property="og:title" content="Конструктор КП v2" />
+    <meta property="og:description" content="Профессиональный конструктор коммерческих предложений с поддержкой AI импорта, живого предпросмотра A4, точного экспорта в PDF и DOCX." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <script>
+      // Gracefully ignore WebSocket / HMR connection errors in iframe environment
+      window.addEventListener('error', function(e) {
+        if (e.message && (e.message.includes('WebSocket') || e.message.includes('@vite/client'))) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        if (e.reason && (String(e.reason).includes('WebSocket') || String(e.reason).includes('@vite/client'))) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-slate-100 text-slate-900 antialiased font-sans selection:bg-amber-100 selection:text-amber-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
